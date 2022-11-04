@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitCal.UI", "FitCal.UI\FitCal.UI.csproj", "{D1C817E7-87C1-4BF7-B8A5-D1F48D3A58EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitCal.DAL", "FitCal.DAL\FitCal.DAL.csproj", "{67567296-2D28-4425-858D-9CA76BEE1BE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitCal.DATA", "FitCal.DATA\FitCal.DATA.csproj", "{87C7656E-25A5-48B3-8DFB-2A0AB2499FE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1C817E7-87C1-4BF7-B8A5-D1F48D3A58EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C817E7-87C1-4BF7-B8A5-D1F48D3A58EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C817E7-87C1-4BF7-B8A5-D1F48D3A58EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C817E7-87C1-4BF7-B8A5-D1F48D3A58EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67567296-2D28-4425-858D-9CA76BEE1BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67567296-2D28-4425-858D-9CA76BEE1BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67567296-2D28-4425-858D-9CA76BEE1BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67567296-2D28-4425-858D-9CA76BEE1BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87C7656E-25A5-48B3-8DFB-2A0AB2499FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87C7656E-25A5-48B3-8DFB-2A0AB2499FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87C7656E-25A5-48B3-8DFB-2A0AB2499FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87C7656E-25A5-48B3-8DFB-2A0AB2499FE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B3DD8C4-34F8-407E-A330-0737D69EE38B}
+	EndGlobalSection
+EndGlobal
