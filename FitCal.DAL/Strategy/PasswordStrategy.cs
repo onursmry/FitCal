@@ -10,10 +10,10 @@ namespace FitCal.DAL.Strategy
             //assign password to admin
             Password password = new Password()
             {
-                Text = "123456",
+                Text = "",
                 CreatedDate = System.DateTime.Now,
                 SecurityQuestion = "İlkokul öğretmeninizin adı nedir?",
-                SecurityWord = "Ayşe",
+                SecurityWord = "",
                 User = context.Users.Find(1)
             };
 
