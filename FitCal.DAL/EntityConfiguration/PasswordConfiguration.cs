@@ -16,7 +16,7 @@ namespace FitCal.DAL.EntityConfiguration
             Property(p => p.SecurityWord).IsRequired().HasMaxLength(50).HasColumnName("Güvenlik Cevabı");
             
 
-            //a password belongs to one user map user id
+            //a password belongs to one user
             HasRequired(p => p.User).WithRequiredDependent(u => u.Password).Map(m => m.MapKey("UserId"));
         }
     }
