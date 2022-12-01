@@ -50,6 +50,7 @@ namespace FitCal.UI
             this.mclUser.Location = new System.Drawing.Point(437, 18);
             this.mclUser.Name = "mclUser";
             this.mclUser.TabIndex = 0;
+            this.mclUser.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.mclUser_DateSelected);
             // 
             // pbxAvatar
             // 
@@ -103,6 +104,7 @@ namespace FitCal.UI
             this.btnShowUserInfo.TabIndex = 7;
             this.btnShowUserInfo.Text = "Bilgilerimi Getir";
             this.btnShowUserInfo.UseVisualStyleBackColor = true;
+            this.btnShowUserInfo.Click += new System.EventHandler(this.btnShowUserInfo_Click);
             // 
             // btnReports
             // 
@@ -112,6 +114,7 @@ namespace FitCal.UI
             this.btnReports.TabIndex = 8;
             this.btnReports.Text = "Raporlarım";
             this.btnReports.UseVisualStyleBackColor = true;
+            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
             // 
             // btnLogOut
             // 
@@ -121,6 +124,7 @@ namespace FitCal.UI
             this.btnLogOut.TabIndex = 9;
             this.btnLogOut.Text = "Çıkış";
             this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // btnAddMeal
             // 
@@ -130,6 +134,7 @@ namespace FitCal.UI
             this.btnAddMeal.TabIndex = 6;
             this.btnAddMeal.Text = "Öğün Ekle";
             this.btnAddMeal.UseVisualStyleBackColor = true;
+            this.btnAddMeal.Click += new System.EventHandler(this.btnAddMeal_Click);
             // 
             // FrmUser
             // 
@@ -147,6 +152,8 @@ namespace FitCal.UI
             this.Name = "FrmUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmUser";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmUser_FormClosed);
+            this.Load += new System.EventHandler(this.FrmUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxAvatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMeals)).EndInit();
             this.gbxMeals.ResumeLayout(false);

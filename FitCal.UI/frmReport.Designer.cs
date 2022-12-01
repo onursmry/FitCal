@@ -114,6 +114,7 @@
             this.btnList.TabIndex = 9;
             this.btnList.Text = "Listele";
             this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // cbxMealList
             // 
@@ -213,6 +214,8 @@
             this.Name = "FrmReport";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmReports";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmReport_FormClosed);
+            this.Load += new System.EventHandler(this.FrmReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReport)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

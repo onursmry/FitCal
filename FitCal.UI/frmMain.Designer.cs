@@ -63,6 +63,7 @@
             this.txtUserPassword.PasswordChar = '*';
             this.txtUserPassword.Size = new System.Drawing.Size(169, 20);
             this.txtUserPassword.TabIndex = 1;
+            this.txtUserPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUserPassword_KeyPress);
             // 
             // label1
             // 
@@ -99,6 +100,7 @@
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "Giriş Yap";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnRegister
             // 
@@ -111,6 +113,7 @@
             this.btnRegister.TabIndex = 5;
             this.btnRegister.Text = "Yeni Kullanıcı";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // cbxShowPassword
             // 
@@ -123,6 +126,8 @@
             this.cbxShowPassword.Size = new System.Drawing.Size(49, 33);
             this.cbxShowPassword.TabIndex = 6;
             this.cbxShowPassword.UseVisualStyleBackColor = true;
+            this.cbxShowPassword.CheckedChanged += new System.EventHandler(this.cbxShowPassword_CheckedChanged);
+            this.cbxShowPassword.MouseHover += new System.EventHandler(this.cbxShowPassword_MouseHover);
             // 
             // btnForgotPassword
             // 
@@ -135,6 +140,7 @@
             this.btnForgotPassword.TabIndex = 7;
             this.btnForgotPassword.Text = "Parolamı Unuttum";
             this.btnForgotPassword.UseVisualStyleBackColor = true;
+            this.btnForgotPassword.Click += new System.EventHandler(this.btnForgotPassword_Click);
             // 
             // lnkHelp
             // 
@@ -148,6 +154,7 @@
             this.lnkHelp.TabIndex = 8;
             this.lnkHelp.TabStop = true;
             this.lnkHelp.Text = "Hakkında";
+            this.lnkHelp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkHelp_LinkClicked);
             // 
             // label15
             // 
@@ -179,6 +186,8 @@
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

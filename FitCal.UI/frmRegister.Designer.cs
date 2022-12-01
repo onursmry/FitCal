@@ -162,6 +162,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(200, 20);
             this.txtPassword.TabIndex = 5;
+            this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
             // 
             // txtPassword2
             // 
@@ -176,6 +177,7 @@
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(200, 20);
             this.txtHeight.TabIndex = 7;
+            this.txtHeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DigitsOnly);
             // 
             // txtWeight
             // 
@@ -184,6 +186,7 @@
             this.txtWeight.Name = "txtWeight";
             this.txtWeight.Size = new System.Drawing.Size(200, 20);
             this.txtWeight.TabIndex = 8;
+            this.txtWeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DigitsDecimal);
             // 
             // dtpBirthDate
             // 
@@ -200,6 +203,7 @@
             this.btnAdd.TabIndex = 17;
             this.btnAdd.Text = "Kaydet";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnAddPhoto
             // 
@@ -209,6 +213,7 @@
             this.btnAddPhoto.TabIndex = 18;
             this.btnAddPhoto.Text = "Fotoğraf Ekle";
             this.btnAddPhoto.UseVisualStyleBackColor = true;
+            this.btnAddPhoto.Click += new System.EventHandler(this.btnAddPhoto_Click);
             // 
             // pbxUserPhoto
             // 
@@ -351,6 +356,8 @@
             this.Name = "FrmRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kayıt Ol";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmRegister_FormClosing);
+            this.Load += new System.EventHandler(this.FrmRegister_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxUserPhoto)).EndInit();
             this.gbxUserRegistration.ResumeLayout(false);
             this.gbxUserRegistration.PerformLayout();

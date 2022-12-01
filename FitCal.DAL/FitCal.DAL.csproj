@@ -61,6 +61,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategy\CategoryStrategy.cs" />
     <Compile Include="Strategy\FoodStrategy.cs" />
+    <Compile Include="Strategy\PasswordStrategy.cs" />
     <Compile Include="Strategy\UserStrategy.cs" />
   </ItemGroup>
   <ItemGroup />

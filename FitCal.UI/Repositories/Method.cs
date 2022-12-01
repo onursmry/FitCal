@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -79,8 +80,6 @@ namespace FitCal.UI.Repositories
                     count++;
                 }
             }
-            
-            //Count can be set to desired number
             if (count >= 1)
             {
                 return true;
@@ -102,8 +101,6 @@ namespace FitCal.UI.Repositories
                     count++;
                 }
             }
-
-            //Count can be set to desired number
             if (count >= 1)
             {
                 return true;
@@ -126,8 +123,6 @@ namespace FitCal.UI.Repositories
                     count++;
                 }
             }
-
-            //Count can be set to desired number
             if (count >= 1)
             {
                 return true;
@@ -139,7 +134,7 @@ namespace FitCal.UI.Repositories
         }
 
         //encrypt password
-        public static string Encrypt(string sifre)
+        public static string Sha256_hash(string sifre)
         {
             using (SHA256 hash = SHA256Managed.Create())
             {
@@ -147,7 +142,7 @@ namespace FitCal.UI.Repositories
             }
         }
 
-        //check for email format
+
         public static bool IsValidEmail(string email)
         {
             Regex emailRegex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$", RegexOptions.IgnoreCase);

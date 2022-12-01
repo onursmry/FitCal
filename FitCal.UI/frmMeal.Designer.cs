@@ -107,6 +107,7 @@
             this.btnSearch.TabIndex = 21;
             this.btnSearch.Text = "Ara";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // lblCalories
             // 
@@ -126,6 +127,7 @@
             this.btnAddMeal.TabIndex = 8;
             this.btnAddMeal.Text = "Öğün Ekle";
             this.btnAddMeal.UseVisualStyleBackColor = true;
+            this.btnAddMeal.Click += new System.EventHandler(this.btnAddMeal_Click);
             // 
             // label8
             // 
@@ -161,6 +163,7 @@
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "-->";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnRemove
             // 
@@ -170,6 +173,7 @@
             this.btnRemove.TabIndex = 6;
             this.btnRemove.Text = "<--";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // txtSearchFood
             // 
@@ -255,6 +259,7 @@
             this.btnUpdateBringInfo.TabIndex = 34;
             this.btnUpdateBringInfo.Text = "Bilgileri Getir";
             this.btnUpdateBringInfo.UseVisualStyleBackColor = true;
+            this.btnUpdateBringInfo.Click += new System.EventHandler(this.btnUpdateBringInfo_Click);
             // 
             // nudUpdateMealId
             // 
@@ -319,6 +324,7 @@
             this.btnUpdateMeal.TabIndex = 26;
             this.btnUpdateMeal.Text = "Öğün Güncelle";
             this.btnUpdateMeal.UseVisualStyleBackColor = true;
+            this.btnUpdateMeal.Click += new System.EventHandler(this.btnUpdateMeal_Click);
             // 
             // btnUpdateAdd
             // 
@@ -328,6 +334,7 @@
             this.btnUpdateAdd.TabIndex = 25;
             this.btnUpdateAdd.Text = "-->";
             this.btnUpdateAdd.UseVisualStyleBackColor = true;
+            this.btnUpdateAdd.Click += new System.EventHandler(this.btnUpdateAdd_Click);
             // 
             // btnUpdateRemove
             // 
@@ -337,6 +344,7 @@
             this.btnUpdateRemove.TabIndex = 24;
             this.btnUpdateRemove.Text = "<--";
             this.btnUpdateRemove.UseVisualStyleBackColor = true;
+            this.btnUpdateRemove.Click += new System.EventHandler(this.btnUpdateRemove_Click);
             // 
             // lbxUserMeal
             // 
@@ -414,6 +422,7 @@
             this.btnShowMeal.TabIndex = 31;
             this.btnShowMeal.Text = "Öğünü Getir";
             this.btnShowMeal.UseVisualStyleBackColor = true;
+            this.btnShowMeal.Click += new System.EventHandler(this.btnShowMeal_Click);
             // 
             // btnRemoveMeal
             // 
@@ -424,6 +433,7 @@
             this.btnRemoveMeal.TabIndex = 30;
             this.btnRemoveMeal.Text = "Öğün Sil";
             this.btnRemoveMeal.UseVisualStyleBackColor = true;
+            this.btnRemoveMeal.Click += new System.EventHandler(this.btnRemoveMeal_Click);
             // 
             // label6
             // 
@@ -494,6 +504,8 @@
             this.Name = "FrmMeal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMeal";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMeal_FormClosed);
+            this.Load += new System.EventHandler(this.FrmMeal_Load);
             this.gbxAddMeal.ResumeLayout(false);
             this.gbxAddMeal.PerformLayout();
             this.gbxUpdateMeal.ResumeLayout(false);

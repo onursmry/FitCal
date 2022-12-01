@@ -2,6 +2,7 @@
 {
     public enum Genders
     {
+        
         Kadın,
         Erkek
     }

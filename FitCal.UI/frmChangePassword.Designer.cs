@@ -123,6 +123,7 @@
             this.btnChangePassword.TabIndex = 6;
             this.btnChangePassword.Text = "Parolamı Güncelle";
             this.btnChangePassword.UseVisualStyleBackColor = true;
+            this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
             // 
             // btnGetUser
             // 
@@ -132,6 +133,7 @@
             this.btnGetUser.TabIndex = 11;
             this.btnGetUser.Text = "Kullanıcıyı Bul";
             this.btnGetUser.UseVisualStyleBackColor = true;
+            this.btnGetUser.Click += new System.EventHandler(this.btnGetUser_Click);
             // 
             // txtSecurityQuestion
             // 
@@ -162,6 +164,8 @@
             this.Name = "FrmChangePassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmChangePassword";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmChangePassword_FormClosed);
+            this.Load += new System.EventHandler(this.FrmChangePassword_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

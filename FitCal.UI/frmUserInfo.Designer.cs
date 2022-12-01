@@ -186,6 +186,7 @@
             this.btnUpdatePhoto.TabIndex = 15;
             this.btnUpdatePhoto.Text = "Fotoğraf Değiştir";
             this.btnUpdatePhoto.UseVisualStyleBackColor = true;
+            this.btnUpdatePhoto.Click += new System.EventHandler(this.btnUpdatePhoto_Click);
             // 
             // label8
             // 
@@ -212,6 +213,7 @@
             this.btnUpdateInfo.TabIndex = 20;
             this.btnUpdateInfo.Text = "Bilgileri Güncelle";
             this.btnUpdateInfo.UseVisualStyleBackColor = true;
+            this.btnUpdateInfo.Click += new System.EventHandler(this.btnUpdateInfo_Click);
             // 
             // label9
             // 
@@ -238,6 +240,7 @@
             this.btnDeleteUser.TabIndex = 23;
             this.btnDeleteUser.Text = "Hesabı Sil";
             this.btnDeleteUser.UseVisualStyleBackColor = true;
+            this.btnDeleteUser.Click += new System.EventHandler(this.btnDeleteUser_Click);
             // 
             // FrmUserInfo
             // 
@@ -269,6 +272,8 @@
             this.Name = "FrmUserInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmUserInfo";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmUserInfo_FormClosing);
+            this.Load += new System.EventHandler(this.FrmUserInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxProfilePicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

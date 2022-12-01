@@ -3,13 +3,16 @@ using System.Data.Entity;
 using FitCal.DAL.EntityConfiguration;
 using FitCal.DATA.Entities;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using FitCal.DAL.Strategy;
+using FitCal.DATA.Enums;
+using System.Runtime.Remoting.Contexts;
+using FitCal.DAL.Migrations;
 
 namespace FitCal.DAL
 {
     public class FitCalContext : DbContext
     {
-        public FitCalContext() : base("connectionString")
-      
+        public FitCalContext() : base("Server=ONUR-PC;Database=FitCalDB;Trusted_Connection=True;")
         {
             //create database if not exists
             Database.SetInitializer<FitCalContext>(new CreateDatabaseIfNotExists<FitCalContext>());

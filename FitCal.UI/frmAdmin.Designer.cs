@@ -85,6 +85,7 @@
             this.btnAddFood.TabIndex = 23;
             this.btnAddFood.Text = "Besin Ekle";
             this.btnAddFood.UseVisualStyleBackColor = true;
+            this.btnAddFood.Click += new System.EventHandler(this.btnAddFood_Click);
             // 
             // txtFoodCalories
             // 
@@ -175,6 +176,7 @@
             this.btnListFood.TabIndex = 28;
             this.btnListFood.Text = "Besinleri Listele";
             this.btnListFood.UseVisualStyleBackColor = true;
+            this.btnListFood.Click += new System.EventHandler(this.btnListFood_Click);
             // 
             // txtPortion
             // 
@@ -200,6 +202,7 @@
             this.btnFoodPhoto.TabIndex = 25;
             this.btnFoodPhoto.Text = "Fotoğraf Ekle";
             this.btnFoodPhoto.UseVisualStyleBackColor = true;
+            this.btnFoodPhoto.Click += new System.EventHandler(this.btnFoodPhoto_Click);
             // 
             // pbxFoodPhoto
             // 
@@ -265,6 +268,7 @@
             this.btnListUsers.TabIndex = 41;
             this.btnListUsers.Text = "Kullanıcıları Listele";
             this.btnListUsers.UseVisualStyleBackColor = true;
+            this.btnListUsers.Click += new System.EventHandler(this.btnListUsers_Click);
             // 
             // label12
             // 
@@ -291,6 +295,7 @@
             this.btnUpdate.TabIndex = 2;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // label9
             // 
@@ -309,6 +314,7 @@
             this.btnDelete.TabIndex = 3;
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // txtGender
             // 
@@ -326,6 +332,7 @@
             this.btnActivateUser.TabIndex = 4;
             this.btnActivateUser.Text = "Hesabı Aktif Et";
             this.btnActivateUser.UseVisualStyleBackColor = true;
+            this.btnActivateUser.Click += new System.EventHandler(this.btnActivateUser_Click);
             // 
             // label8
             // 
@@ -344,6 +351,7 @@
             this.btnRefresh.TabIndex = 5;
             this.btnRefresh.Text = "Listeyi Yenile";
             this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // dtpBirthDate
             // 
@@ -476,6 +484,7 @@
             this.dgvAdminPanel.Name = "dgvAdminPanel";
             this.dgvAdminPanel.Size = new System.Drawing.Size(571, 357);
             this.dgvAdminPanel.TabIndex = 0;
+            this.dgvAdminPanel.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsers_CellDoubleClick);
             // 
             // FrmAdmin
             // 
@@ -487,6 +496,8 @@
             this.Name = "FrmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmAdmin";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmAdmin_FormClosing);
+            this.Load += new System.EventHandler(this.FrmAdmin_Load);
             this.gbxAddFood.ResumeLayout(false);
             this.gbxAddFood.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFoodPhoto)).EndInit();

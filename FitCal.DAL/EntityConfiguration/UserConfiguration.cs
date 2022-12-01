@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity.ModelConfiguration;
 using FitCal.DATA.Entities;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Net.Mail;
 
 namespace FitCal.DAL.EntityConfiguration
 {
