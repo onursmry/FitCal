@@ -23,9 +23,9 @@ namespace FitCal.DAL.Strategy
                 Email = "admin@fitcal.com",
                 UserType = UserTypes.Admin,
                 CreatedDate = DateTime.Now,
-                BirthDate = new DateTime(1990, 09, 14),
-                Height = 180,
-                Weight = 70,
+                BirthDate = new DateTime(YYYY, MM, DD),
+                Height = ,
+                Weight = ,
                 Gender = Genders.Erkek,
                 IsActive = UserStates.Active,
             };
